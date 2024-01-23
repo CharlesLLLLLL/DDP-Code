@@ -1,0 +1,59 @@
+breakfast = ["shit", "orange", "apple", "watermelon"]
+#for meal in breakfast:
+    #if meal == "apple":
+     #   break
+    #print(meal)
+    #if meal == "apple":
+    #    continue
+    #print(meal)
+
+#beverage = ["soy milk", "coke", "sprite"]
+#number = 0
+#for meal in breakfast:
+ #   for drink in beverage:
+  #      print(f"{meal}and{drink}")
+   #     number += 1
+    #print(f"there are {number} set meal totally")
+
+
+#series数列 = [1, 2, 3, 4, 5, 6]
+#product乘积 = 1
+#for number in series数列:
+ #   product乘积 *= number
+#print(product乘积)
+
+#series = [1, 2, 3, 4, 5, 6]
+#list = []
+#for number in series:
+#    if number > 3:
+ #       list.append(number)
+#print(list)
+
+#series = [1, -2, 3, -4, 5, -6]
+#positive_number = []
+#negative_number = []
+#for number in series:
+#    if number > 0:
+#        positive_number.append(number)
+#    else:
+ #       negative_number.append(number)
+#print(f"number is positive include {positive_number}")
+#print(f"number is negative include {negative_number}")
+
+
+#for x in range (5, 10, 2):
+#     print(x)
+
+
+
+correct_password = "88888888"
+for attempt in range(5):
+    password = input("please enter the password:")
+    if password == correct_password:
+        print("password correct")
+        break
+    elif password != correct_password and attempt <4:
+        print ("incorrect password, please enter again")
+        print(f"you have {4-attempt} attempts left")
+    else:
+        print("you have failed to enter correctly, account locked")
