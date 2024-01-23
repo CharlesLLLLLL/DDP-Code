@@ -1,0 +1,63 @@
+student = ["Jessica", "fuck", "sb", "2b"]
+#print(len(student))
+#print(student[3])
+#print(student[-3])
+#print(student[0:3])
+#print(student[1: ])
+#print(student[:3])
+
+#poem = "in me, the tiger sniff the rose"
+#print(list(poem))
+
+#date = "2024/1/22"
+#print(date.split("/"))
+
+#student = ["Jessica", "fuck", "sb", "2b"]
+#print("/".join(student))
+#student.append("lee")
+#print(student)
+#student.extend(["lee", "wang"])
+#print(student)
+
+student = ["Jessica", "fuck", "sb", "2b"]
+#student.remove("Jessica")
+#print(student)
+#student.pop(2)
+#print(student)
+
+#print("3b" in student)
+
+#if "sb" in student:
+ #   print("sb is in the list")
+#else:
+ #   print("sb is not in the list")
+
+#print(student.index("sb"))
+
+grade_system = ["sn", 55, "sg", 23, "sb", 10]
+operation = input("please enter the order(A)check (B)add (C)delete (D)modify:").upper()
+if operation == "A":
+    name = input("please enter the name:")
+    if name not in grade_system:
+         print("404 not found")
+    else:
+         position = grade_system.index(name)
+         print(f"the grade of {name} is {grade_system[position + 1]}")
+elif operation == "B":
+     student_information = input("please enter the adding name/grade (separated by a /):")
+     grade_system.extend(student_information.split("/"))
+     print("grade adding finished")
+     print(f"the number of student currently added was {int(len(grade_system)/2)}")
+elif operation == "C":
+     name = input("please enter the name:")
+     position_of_the_name = grade_system.index(name) 
+     grade_system.pop(position_of_the_name)
+     grade_system.pop(position_of_the_name)
+     print(grade_system)
+elif operation == "D":
+     name = input("please enter the name:")
+     grade = input("please enter the grade:")
+     position_of_the_name = grade_system.index(name) 
+     grade_system[position_of_the_name + 1] = grade
+     print(grade_system)
+
