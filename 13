@@ -1,4 +1,4 @@
-student = ["Jessica", "fuck", "sb", "2b"]
+student = ["cody", "lucy", "george", "wang"]
 #print(len(student))
 #print(student[3])
 #print(student[-3])
@@ -12,15 +12,15 @@ student = ["Jessica", "fuck", "sb", "2b"]
 #date = "2024/1/22"
 #print(date.split("/"))
 
-#student = ["Jessica", "fuck", "sb", "2b"]
+#student = ["cody", "lucy", "george", "wang"]
 #print("/".join(student))
 #student.append("lee")
 #print(student)
 #student.extend(["lee", "wang"])
 #print(student)
 
-student = ["Jessica", "fuck", "sb", "2b"]
-#student.remove("Jessica")
+student = ["cody", "lucy", "george", "wang"]
+#student.remove("cody")
 #print(student)
 #student.pop(2)
 #print(student)
